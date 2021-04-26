@@ -6,8 +6,6 @@ public class AccountHolder {
 	private String MiddleName;
 	private String LastName;
 	private String ssn;
-	private double checkingAccountOpeningBalance;
-	private double savingsAccountOpeningBalance;
 	private CheckingAccount checking;
 	private SavingsAccount Saving;
 	

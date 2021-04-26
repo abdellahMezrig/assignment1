@@ -3,7 +3,7 @@ package com.meritamerica.assignment1;
 public class SavingsAccount {
 	private int years = 3;
 	private double openingBalance;
-	private static double balance;
+	private double balance;
 	private static double InterestRate=0.01;
 	
 	public SavingsAccount (double openingBalance) {
@@ -22,6 +22,8 @@ public class SavingsAccount {
 		return InterestRate;
 	}
 	
+	// keeps you from withdrawing a negative amount or more than you have available
+	
 	public boolean withdraw(double amount) {
 		if (amount > balance || amount < 0) {
 			return false;
@@ -30,6 +32,8 @@ public class SavingsAccount {
 			return true;
 		}
 	}
+	
+	// keeps you from depositing a negative amount
 	
 	public boolean deposit(double amount) {
 		if (amount <= 0) {
