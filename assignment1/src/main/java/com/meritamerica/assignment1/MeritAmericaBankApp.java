@@ -12,7 +12,7 @@ public class MeritAmericaBankApp {
 		System.out.println("--------------------------------");
 		System.out.println(accounholder.getSavingsAccount().toString());
 		System.out.println("--------------------------------");
-		AccountHolder User001 = new AccountHolder("Sadiq", "","Manji", "123456789",200,500);
+		AccountHolder User001 = new AccountHolder("bob", "","ross", "987654321",200,500);
 		User001.getCheckingAccount().deposit(-500);
 		User001.getSavingsAccount().withdraw(600);
 		System.out.println(User001.toString());

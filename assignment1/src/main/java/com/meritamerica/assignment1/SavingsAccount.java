@@ -43,6 +43,8 @@ public class SavingsAccount {
 			return true;
 		}
 		}
+	
+	// math.pow raises the a value to the power of the b value
 
 	public double futureValue(int years) {
 		double a = (1+InterestRate) ;
@@ -51,6 +53,8 @@ public class SavingsAccount {
 		return newBalance;
 	}
 	public String toString() {
+		
+		// String .format method changes numbers into smaller form
 		
 		return "Savings Account Balance: " + (String.format("%.3f",balance)) + "\n"+
 			   "Savings Account Interest Rate: " + (String.format("%.2f",InterestRate)) + "\n" + 
